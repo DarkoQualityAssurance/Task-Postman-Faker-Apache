@@ -55,15 +55,6 @@ public class Test {
         Assert.assertTrue(driver.getCurrentUrl().contains("signup"));
     }
 
-//        if (checkUrl.getAttribute("href").contains("signup")){
-//            System.out.println("Contain word \"SignUp\"");
-//        }else {
-//            System.out.println("Not contain word \"SignUp\"");
-//        }
-//        String expectedText = "https://vue-demo.daniel-avellaneda.com/signup";
-//        Assert.assertEquals(checkUrl.getAttribute("href"), expectedText);
-
-    //e-mail no input test
     @org.testng.annotations.Test
     public void emailCheckTest() {
         WebElement emailInput = driver.findElement(By.xpath("//*[@id='email']"));
@@ -92,8 +83,6 @@ public class Test {
         Assert.assertEquals(passwordType.getAttribute("type"),expectedTextFroPassword);
 
 }
-
-    //e-mail wrong input test
 
     @DataProvider(name = "testDataEMail")
     public Object[][] testDataMail() {
