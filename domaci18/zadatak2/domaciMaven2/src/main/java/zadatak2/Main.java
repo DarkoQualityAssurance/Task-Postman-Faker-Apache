@@ -20,7 +20,7 @@ public class Main {
         FileInputStream fileInputStream = new FileInputStream("zadatak2.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
         XSSFSheet sheet = workbook.getSheetAt(0);
-        workbook.createSheet("Sheet2");//kreiranje novog sheeta
+        workbook.createSheet("Sheet2");
         XSSFSheet sheet2 = workbook.getSheetAt(1);
 
 
